@@ -1,16 +1,11 @@
 <template>
   <div id="app">
-    <button @click="toggle" class="btn btn-success">toggle</button>
-    <Drawer @close="toggle" align="left" :closeable="true">
-      <div v-if="open">content here</div>
-    </Drawer>
     <Header />
     <Main />
     <About />
     <Skill />
     <Vision />
     <Footer />
-    <Menu />
   </div>
 </template>
 
@@ -21,8 +16,6 @@ import  About from './components/About.vue'
 import  Skill from './components/Skill.vue'
 import  Vision from './components/Vision.vue'
 import  Footer from './components/Footer.vue'
-import  Menu from './components/Menu.vue'
-import Drawer from 'vue-simple-drawer'
 
 export default {
   name: 'App',
@@ -32,20 +25,8 @@ export default {
     About,
     Skill,
     Vision,
-    Footer,
-    Menu,
-    Drawer
+    Footer
   },
-  data() {
-    return {
-      open: false
-    }
-  },
-  methods: {
-    toggle() {
-      this.open = !this.open
-    }
-  }
 }
 </script>
 
