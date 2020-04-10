@@ -6,7 +6,7 @@
     <div class="companyname">
       Seattleconsulting
     </div>
-    <img src="">
+    <img src="../assets/IMG_1386 2.jpg">
   </div>
 </template>
 
@@ -18,6 +18,7 @@
   #mainSection {
     width: 100%;
     background: linear-gradient(to bottom, #80e1f7, #06c1e6);
+    padding-bottom: 20px;
   }
 
   .userName {
@@ -35,5 +36,11 @@
     font-weight: bold;
     font-size: 18px;
     text-shadow: 1px 1px #fff;
+  }
+
+  img {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
   }
 </style>

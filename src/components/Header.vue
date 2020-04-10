@@ -1,11 +1,12 @@
 <template>
-  <div id="headerSection">    
+  <div id="headerSection">
     <button
       class="btn-success"
       @click="toggle"
     >
-      おす
+      <img src="../assets/hum.png">
     </button>
+
     <Drawer
       align="left"
       :closeable="true"
@@ -25,9 +26,9 @@
     name: 'App',
     components: {
       Menu,
-      Drawer   
+      Drawer
   },
-      
+
   data() {
     return {
       open: false
@@ -45,5 +46,13 @@
   .headerSection {
     background: #f3f3f3;
     width: 100%;
+  }
+
+  img {
+    font-family: 'Noto Sans JP', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    width: 100%;
+    height: auto;
   }
 </style>

@@ -4,7 +4,10 @@
       Vision
     </div>
     <div class="visionExplain">
-      <p>趣味でフロントエンドを使用することがあるので、バックエンドをメインで行い、後にフロントの方に移行していきたいと思っています。</p>
+      <p>
+        修練の末に身につけたスキルをまとめました。幅広く知識を身につけた後に、より専門的に学んでいこうと思います。
+        趣味でフロントエンドを使用することがあるので、バックエンドをメインで行い、後にフロントの方に移行していきたいと考えています。
+      </p>
     </div>
   </div>
 </template>
@@ -27,10 +30,8 @@
   }
 
   .visonExplain {
-    background: #707070;
+    color: #707070;
     font-family: 'Noto Sans JP', sans-serif;
     font-size: 12px;
-    overflow-wrap: normal;
-    line-height: 0.25em;
   }
 </style>
