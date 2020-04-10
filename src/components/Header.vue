@@ -1,7 +1,17 @@
 <template>
-  <div id="headerSection">    
-    <button @click="toggle" class="btn-success">おす</button>
-    <Drawer @close="toggle" align="left" :closeable="true">
+  <div id="headerSection">
+    <button
+      class="btn-success"
+      @click="toggle"
+    >
+      <img src="../assets/hum.png">
+    </button>
+
+    <Drawer
+      align="left"
+      :closeable="true"
+      @close="toggle"
+    >
       <div v-if="open">
         <Menu />
       </div>
@@ -16,9 +26,9 @@
     name: 'App',
     components: {
       Menu,
-      Drawer   
+      Drawer
   },
-      
+
   data() {
     return {
       open: false
@@ -33,8 +43,16 @@
 </script>
 
 <style scope>
-  .headerSection{
-    background:#F3F3F3;
-    width:100%
-  }    
+  .headerSection {
+    background: #f3f3f3;
+    width: 100%;
+  }
+
+  img {
+    font-family: 'Noto Sans JP', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    width: 100%;
+    height: auto;
+  }
 </style>
