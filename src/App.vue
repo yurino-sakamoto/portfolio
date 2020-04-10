@@ -32,19 +32,21 @@ export default {
 
 <style lang="scss">
 @import "~bootstrap/scss/bootstrap-reboot",
-"~bootstrap/scss/buttons";
+  "~bootstrap/scss/buttons";
+
 </style>
 
 <style>
+/* Google fontsで導入したいfonts から@importのコードを取得 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
   padding-top: 150px;
-  margin: 0 auto;
   width: 800px;
 }
 </style>
