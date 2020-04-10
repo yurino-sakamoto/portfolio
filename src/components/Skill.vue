@@ -1,11 +1,16 @@
 <template>
-  <div id= "skillSection">
-    <div class="skillTitle">Skill Set</div>
-    <div class="skillExplain"></div>
+  <div id="skillSection">
+    <div class="skillTitle">
+      Skill Set
+    </div>
+    <div class="skillExplain" />
     <label for="">gitHubLabel</label>
-    <a class="githubLink" url="https://github.com/yurino-sakamoto/portfolio">gitHub:https://github.com/yurino-sakamoto/portfolio</a>
-    <a class="skillCategories"></a>
-    <div class="skillList"></div>
+    <a
+      class="githubLink"
+      url="https://github.com/yurino-sakamoto/portfolio"
+    >gitHub:https://github.com/yurino-sakamoto/portfolio</a>
+    <a class="skillCategories" />
+    <div class="skillList" />
     <div class="skillGraph">
       <chart />
     </div>
@@ -16,8 +21,8 @@
 import { Rader } from '../../../portfolio/node_modules/vue-chartjs';
 
 export default {
+  name: 'Chart',
   extends: Rader,
-  name: 'chart',
   data () {
     return {
       data: {
@@ -34,38 +39,37 @@ export default {
 </script>
 
 <style scope>
-  .skillSection{
-    background:#FFFFFF;
-    width:100%
+  .skillSection {
+    background: #fff;
+    width: 100%;
   }
 
-  .skillTitle{
-    color:#20879F;
-    font-family: Noto Sans;
-    font-size:18px;
+  .skillTitle {
+    color: #20879f;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 18px;
     font-weight: bold;
-    text-shadow:1px 1px #FFFFFF;
+    text-shadow: 1px 1px #fff;
   }
 
-  .skillExplain{
+  .skillExplain {
     color: #707070;
-    font-size: Nano Sans;
+    font-family: 'Noto Sans JP', sans-serif;
     font-size: 12px;
     overflow-wrap: normal;
     line-height: 0.25em;
   }
 
-  .gitHubLabel{
-    color: #20879F;
-    font-size: Nano Sans;
+  .gitHubLabel {
+    color: #20879f;
+    font-family: 'Noto Sans JP', sans-serif;
     font-size: 12px;
   }
 
-  .gitHubLink{
-    color:#20879F;
-    font-size: Nano Sans;
+  .gitHubLink {
+    color: #20879f;
+    font-family: 'Noto Sans JP', sans-serif;
     font-size: 12px;
   }
-    
 
 </style>
