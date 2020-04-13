@@ -13,23 +13,23 @@
 </script>
 
 <style scope>
-  .aboutoSection {
-    background-color: #f5f5f5;
-    width: 100%;
-  }
+.aboutoSection {
+  background-color: #f5f5f5;
+  width: 100%;
+}
 
-  .aboutTitle {
-    color: #20879f;
-    font-family: 'Noto Sans JP', sans-serif;
-    font-weight: bold;
-    font-size: 18px;
-    text-shadow: 1px 1px #fff;
-  }
+.aboutTitle {
+  color: #20879f;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  text-shadow: 1px 1px #fff;
+}
 
-  .aboutExplain {
-    color: #707070;
-    font-family: 'Noto Sans JP', sans-serif;
-    font-size: 12px;
-    overflow-wrap: normal;
-  }
+.aboutExplain {
+  color: #707070;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 12px;
+  overflow-wrap: normal;
+}
 </style>

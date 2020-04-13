@@ -6,7 +6,10 @@
     <div class="companyname">
       Seattleconsulting
     </div>
-    <img src="../assets/IMG_1386 2.jpg">
+    <img
+      class="myphoto"
+      src="../assets/IMG_1386 2.jpg"
+    >
   </div>
 </template>
 
@@ -15,32 +18,36 @@
 </script>
 
 <style scope>
-  #mainSection {
-    width: 100%;
-    background: linear-gradient(to bottom, #80e1f7, #06c1e6);
-    padding-bottom: 20px;
-  }
+#mainSection {
+  width: 100%;
+  background: linear-gradient(to bottom, #80e1f7, #06c1e6);
+  padding-bottom: 20px;
+}
 
-  .userName {
-    color: #fff;
-    font-family: 'Noto Sans JP', sans-serif;
-    font-weight: bold;
-    font-size: 18px;
-    text-shadow: 1px 1px #fff;
-    border: 1px;
-  }
+.userName {
+  color: #fff;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  text-shadow: 1px 1px #fff;
+  border-bottom: 1px solid white;
+  width: 30%;
+  margin: 0 auto;
+  padding: 10px;
+}
 
-  .companyname {
-    color: #fff;
-    font-family: 'Noto Sans JP', sans-serif;
-    font-weight: bold;
-    font-size: 18px;
-    text-shadow: 1px 1px #fff;
-  }
+.companyname {
+  color: #fff;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  text-shadow: 1px 1px #fff;
+  padding: 10px;
+}
 
-  img {
-    width: 64px;
-    height: 64px;
-    border-radius: 50%;
-  }
+.myphoto {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
 </style>

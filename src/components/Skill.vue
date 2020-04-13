@@ -15,25 +15,43 @@
       >gitHub:https://github.com/yurino-sakamoto/portfolio</a>
     </label>
     <a class="skillCategories">
-      <p> Front-end</p>
-      <p>Back-end</p>
-      <p>DevOps</p>
+      <p
+        class="cateFront-end"
+        @click="FEchange"
+      > Front-end</p>
+      <p
+        class="cateBack-end"
+        @click="BKchange"
+      >Back-end</p>
+      <p
+        class="cateDevelop"
+        @click="Devchange"
+      >DevOps</p>
     </a>
     <div class="skillList">
-      <div class="Front-end">
+      <div
+        class="Front-end"
+        :class="{'active': FEclicked}"
+      >
         <p>HTML</p>
         <p>CSS</p>
         <p>JavaScript</p>
         <p>SCSS</p>
         <p>Vue</p>
       </div>
-      <div class="Back-end">
+      <div
+        class="Back-end"
+        :class="{'active': BKclicked}"
+      >
         <p>Java</p>
         <p>Ruby</p>
         <p>RubyOnRails</p>
         <p>MySQL</p>
       </div>
-      <div class="DevOps">
+      <div
+        class="DevOps"
+        :class="{'active': Devclicked}"
+      >
         <p>Linux</p>
         <p>Node</p>
         <p>Git</p>
@@ -42,110 +60,164 @@
       </div>
     </div>
     <div class="skillGraph">
-      <chart />
+      <div v-if="FEclicked">
+        <FrontChart />
+      </div>
+      <div v-if="BKclicked">
+        <BackChart />
+      </div>
+      <div v-if="Devclicked">
+        <DevelopChart />
+      </div>
     </div>
   </div>
 </template>
 
+
+
 <script>
-import { Rader } from '../../../portfolio/node_modules/vue-chartjs';
+import FrontChart from './FrontChart.vue';
+import BackChart from './BackChart.vue';
+import DevelopChart from './DevelopChart.vue';
 
 export default {
-  name: 'Rader',
-  extends: Rader,
-  data () {
-    return {
-      data: {
-        labels: ['Develop1', 'Develop2', 'Develop3', 'Develop4', 'Develop5', 'Develop6'],
-        datasets: [
-          {
-            label: 'Bar Dataset',
-            data: [50, 50, 50, 50, 50, 50],
-            pointRotation:0,
-
-
-
-          },
-        ]
-      },
-      options: {
-        scales: {
-          angleLines: {
-            display: false
-        },
-        ticks: {
-            suggestedMin: 50,
-            suggestedMax: 100
-          }
-        }
-      }
+    components: {
+      FrontChart,
+      BackChart,
+      DevelopChart,
+    },
+  data() {
+    return{
+      FEclicked:true,
+      BKclicked:false,
+      Devcliced:false
     }
   },
-  mounted () {
-    this.renderChart(this.data, this.options)
-  }
+    methods:{
+      FEchange(){
+        this.FEclicked=true;
+        this.BKclicked=false;
+        this.Devclicked=false;
+      },
+      BKchange(){
+        this.BKclicked=true;
+        this.FEclicked=false;
+        this.Devclicked=false;
+      },
+      Devchange(){
+        this.BKclicked=false;
+        this.FEclicked=false;
+        this.Devclicked=true;
+      }
+    }
 }
-
 </script>
 
 <style scope>
-  .skillSection {
-    background: #fff;
-    width: 100%;
-  }
+.skillSection {
+  background: #fff;
+  width: 100%;
+}
 
-  .skillTitle {
-    color: #20879f;
-    font-family: 'Noto Sans JP', sans-serif;
-    font-size: 18px;
-    font-weight: bold;
-    text-shadow: 1px 1px #fff;
-  }
+.skillTitle {
+  color: #20879f;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  text-shadow: 1px 1px #fff;
+}
 
-  .skillExplain {
-    color: #707070;
-    font-family: 'Noto Sans JP', sans-serif;
-    font-size: 12px;
-    overflow-wrap: normal;
-    text-align: center;
-  }
+.skillExplain {
+  color: #707070;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 12px;
+  overflow-wrap: normal;
+  text-align: center;
+}
 
-  .gitHubLabel {
-    color: #20879f;
-    font-family: 'Noto Sans JP', sans-serif;
-    font-size: 12px;
-  }
+.gitHubLabel {
+  color: #20879f;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 12px;
+}
 
-  .gitHubLink {
-    color: #20879f;
-    font-family: 'Noto Sans JP', sans-serif;
-    font-size: 12px;
-  }
+.gitHubLink {
+  color: #20879f;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 12px;
+}
 
-  .skillCategories p {
-    padding: 20px;
-  }
+.cateFront-end {
+  padding: 0 5px;
+  display: inline-block;
+  margin: 0 auto;
+  color: red;
+}
 
-  .skillGraph {
-    width: 100%;
-    height: 500px;
-  }
+.active p {
+  background-color: rgba(84, 190, 238, 0.5);
+}
 
-  .Front-end p {
-    color: red;
-    margin: 10px;
-    float: left;
-  }
+.cateFront-end:active {
+  background-color: red;
+}
 
-  .Back-end p {
-    color: green;
-    margin: 10px;
-    float: left;
-  }
+.cateBack-end {
+  padding: 0 5px;
+  display: inline-block;
+  margin: 0 auto;
+  color: blue;
+}
 
-  .DevOps p {
-    color: purple;
-    margin: 10px;
-  }
+.cateBack-end:active {
+  background-color: blue;
+}
+
+.cateDevelop {
+  padding: 0 5px;
+  display: inline-block;
+  margin: 0 auto;
+  color: purple;
+}
+
+.cateDevelop:active {
+  background-color: purple;
+}
+
+.skillGraph {
+  width: 100%;
+}
+
+.BKsee {
+  display: none;
+}
+
+.DevSee {
+  display: none;
+}
+
+.Front-end p {
+  color: red;
+  margin: 10px;
+  float: left;
+  border: solid 1px #000;
+  padding: 0 5px;
+}
+
+.Back-end p {
+  color: green;
+  margin: 10px;
+  float: left;
+  border: solid 1px #000;
+  padding: 0 5px;
+}
+
+.DevOps p {
+  color: purple;
+  margin: 10px;
+  float: left;
+  border: solid 1px #000;
+  padding: 0 5px;
+}
 
 </style>
