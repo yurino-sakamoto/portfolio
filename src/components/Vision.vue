@@ -16,22 +16,22 @@
 </script>
 
 <style scope>
-  #visionSection {
-    background: #f5f5f5;
-    width: 100%;
-  }
+#visionSection {
+  background: #f5f5f5;
+  width: 100%;
+}
 
-  .visionTitle {
-    color: #20879f;
-    font-family: 'Noto Sans JP', sans-serif;
-    font-weight: bold;
-    font-size: 18px;
-    text-shadow: 1px 1px #fff;
-  }
+.visionTitle {
+  color: #20879f;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  text-shadow: 1px 1px #fff;
+}
 
-  .visonExplain {
-    color: #707070;
-    font-family: 'Noto Sans JP', sans-serif;
-    font-size: 12px;
-  }
+.visonExplain {
+  color: #707070;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 12px;
+}
 </style>

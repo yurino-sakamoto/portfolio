@@ -4,7 +4,10 @@
       class="btn-success"
       @click="toggle"
     >
-      <img src="../assets/hum.png">
+      <img
+        class="humberger"
+        src="../assets/hum.png"
+      >
     </button>
 
     <Drawer
@@ -43,16 +46,16 @@
 </script>
 
 <style scope>
-  .headerSection {
-    background: #f3f3f3;
-    width: 100%;
-  }
+.headerSection {
+  background: #f3f3f3;
+  width: 100%;
+}
 
-  img {
-    font-family: 'Noto Sans JP', sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    width: 100%;
-    height: auto;
-  }
+.humberger {
+  font-family: 'Noto Sans JP', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  height: auto;
+}
 </style>

@@ -17,20 +17,20 @@
 </script>
 
 <style scope>
-  #drawerSection {
-    background-color: #f3f3f3;
-    width: 100%;
-  }
+#drawerSection {
+  background-color: #f3f3f3;
+  width: 100%;
+}
 
-  ul {
-    display: block;
-    background: #fff;
-    width: 100%;
-    list-style: none;
-  }
+ul {
+  display: block;
+  background: #fff;
+  width: 100%;
+  list-style: none;
+}
 
-  a {
-    width: 100%;
-    display: flex;
-  }
+a {
+  width: 100%;
+  display: flex;
+}
 </style>
