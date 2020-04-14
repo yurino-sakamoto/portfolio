@@ -10,7 +10,7 @@ export default {
         labels: ['Java', 'Ruby', 'RubyOnRails', 'MySQL', 'Vue', 'June'],
         datasets: [
           {
-            label: 'Bar Dataset',
+            label: 'スキル詳細',
             data: [2, 2, 2, 2, 2, 2],
             backgroundColor: [
               'rgba(255, 99, 132, 0.2)',

@@ -18,7 +18,9 @@
 <style scope>
 #visionSection {
   background: #f5f5f5;
-  width: 100%;
+  width: 70%;
+  margin: 0 auto;
+  padding: 0 10px;
 }
 
 .visionTitle {
@@ -29,7 +31,7 @@
   text-shadow: 1px 1px #fff;
 }
 
-.visonExplain {
+.visionExplain {
   color: #707070;
   font-family: 'Noto Sans JP', sans-serif;
   font-size: 12px;

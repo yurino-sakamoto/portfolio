@@ -32,22 +32,32 @@ export default {
 
 </script>
 
-<style lang="scss">
-@import "~bootstrap/scss/bootstrap-reboot",
-  "~bootstrap/scss/buttons";
 
-</style>
 
-<style>
+<style scope>
 /* Google fontsで導入したいfonts から@importのコードを取得 */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
 
-#app {
-  font-family: 'Noto Sans JP', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  width: 800px;
+@media (max-width: 767px) {
+  #app {
+    font-family: 'Noto Sans JP', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+    width: 800px;
+  }
 }
+
+@media (max-width: 1020px) and (min-width: 768px) {
+  #app {
+    font-family: 'Noto Sans JP', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+    width: 800px;
+  }
+}
+
 </style>
