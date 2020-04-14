@@ -22,6 +22,7 @@
   width: 100%;
   background: linear-gradient(to bottom, #80e1f7, #06c1e6);
   padding-bottom: 20px;
+  margin: 20px 0;
 }
 
 .userName {
@@ -46,8 +47,8 @@
 }
 
 .myphoto {
-  width: 64px;
-  height: 64px;
+  width: 15%;
+  height: 15%;
   border-radius: 50%;
 }
 </style>

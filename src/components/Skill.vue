@@ -113,6 +113,7 @@ export default {
 }
 </script>
 
+
 <style scope>
 .skillSection {
   background: #fff;
@@ -132,7 +133,9 @@ export default {
   font-family: 'Noto Sans JP', sans-serif;
   font-size: 12px;
   overflow-wrap: normal;
-  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 20px;
 }
 
 .gitHubLabel {
@@ -145,6 +148,13 @@ export default {
   color: #20879f;
   font-family: 'Noto Sans JP', sans-serif;
   font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.skillCategories {
+  width: 70%;
+  margin: 0 auto;
+  display: block;
 }
 
 .cateFront-end {
@@ -154,8 +164,8 @@ export default {
   color: red;
 }
 
-.active p {
-  background-color: rgba(84, 190, 238, 0.5);
+.active {
+  background-color: rgba(235, 236, 236, 0.925);
 }
 
 .cateFront-end:active {
@@ -185,7 +195,9 @@ export default {
 }
 
 .skillGraph {
-  width: 100%;
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 20px;
 }
 
 .BKsee {
@@ -218,6 +230,11 @@ export default {
   float: left;
   border: solid 1px #000;
   padding: 0 5px;
+}
+
+.skillList {
+  width: 70%;
+  margin: 0 auto;
 }
 
 </style>

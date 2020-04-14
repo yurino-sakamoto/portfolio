@@ -1,40 +1,52 @@
 <template>
   <div id="headerSection">
-    <button
-      class="btn-success"
+    <img
+      class="humberger"
+      src="../assets/hum.png"
       @click="toggle"
     >
-      <img
-        class="humberger"
-        src="../assets/hum.png"
-      >
-    </button>
-
     <Drawer
       align="left"
       :closeable="true"
       @close="toggle"
     >
       <div v-if="open">
-        <Menu />
+        <a
+          href="#Home"
+          class="menu"
+          @click="toggle"
+        >Home</a>
+        <a
+          href="#aboutSection"
+          class="menu"
+          @click="toggle"
+        >About Me</a>
+        <a
+          href="#skillSection"
+          class="menu"
+          @click="toggle"
+        >Skill Sets</a>
+        <a
+          href="#visionSection"
+          class="menu"
+          @click="toggle"
+        >Vision</a>
       </div>
     </Drawer>
   </div>
 </template>
 
 <script>
-  import Drawer from 'vue-simple-drawer'
-  import  Menu from './Menu.vue'
-  export default {
-    name: 'App',
-    components: {
-      Menu,
-      Drawer
-  },
+import Drawer from 'vue-simple-drawer'
 
+export default {
+  name: 'App',
+  components: {
+    Drawer
+  },
   data() {
     return {
-      open: false
+      open: false,
     }
   },
   methods: {
@@ -46,16 +58,32 @@
 </script>
 
 <style scope>
+
 .headerSection {
   background: #f3f3f3;
   width: 100%;
+  height: 40px;
 }
 
 .humberger {
   font-family: 'Noto Sans JP', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  width: 100%;
   height: auto;
+  display: block;
+  text-align: left;
 }
+
+.menu {
+  display: block;
+  font-size: 30px;
+}
+</style>
+
+<style lang="scss">
+@import "~bootstrap/scss/bootstrap-reboot",
+  "~bootstrap/scss/buttons";
+$--simple-drawer-bg-color:white;
+
+@import "~vue-simple-drawer/src/index"
 </style>

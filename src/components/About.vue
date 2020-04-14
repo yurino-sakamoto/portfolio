@@ -13,9 +13,10 @@
 </script>
 
 <style scope>
-.aboutoSection {
+#aboutoSection {
   background-color: #f5f5f5;
   width: 100%;
+  margin: 100px;
 }
 
 .aboutTitle {
@@ -31,5 +32,7 @@
   font-family: 'Noto Sans JP', sans-serif;
   font-size: 12px;
   overflow-wrap: normal;
+  width: 70%;
+  margin: 0 auto;
 }
 </style>

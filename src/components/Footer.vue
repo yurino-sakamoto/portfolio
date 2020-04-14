@@ -26,7 +26,6 @@
   background: linear-gradient(to bottom, #80e1f7, #06c1e6);
   width: 100%;
   padding-bottom: 20px;
-  display: block;
   height: auto;
 }
 
@@ -42,7 +41,7 @@
   height: 30px;
   width: 30px;
   position: relative;
-  left: 390px;
   margin-bottom: 10px;
+  top: -10px;
 }
 </style>
