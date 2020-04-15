@@ -1,12 +1,14 @@
 <template>
   <div id="visionSection">
-    <div class="visionTitle">
+    <h1 class="visionTitle">
       Vision
-    </div>
+    </h1>
     <div class="visionExplain">
       <p>
         修練の末に身につけたスキルをまとめました。幅広く知識を身につけた後に、より専門的に学んでいこうと思います。
-        趣味でフロントエンドを使用することがあるので、バックエンドをメインで行い、後にフロントの方に移行していきたいと考えています。
+        プライベートでフロントエンドを使用することがあるので、バックエンドをメインで行い、後にフロントの方に移行していきたいと考えています。
+        今後の予定としては業務の面では少しでも力になれるように頑張ります。
+        プライベートでは自身の所有するサイトをより大きくしていければと考えています。
       </p>
     </div>
   </div>
@@ -27,13 +29,16 @@
   color: #20879f;
   font-family: 'Noto Sans JP', sans-serif;
   font-weight: bold;
-  font-size: 18px;
-  text-shadow: 1px 1px #fff;
+  text-shadow: 1px 1px gray;
+  padding-top: 10px;
+  margin-top: 20px;
 }
 
-.visionExplain {
+.visionExplain p {
   color: #707070;
   font-family: 'Noto Sans JP', sans-serif;
-  font-size: 12px;
+  font-size: 18px;
+  padding: 5px 0 25px 0;
+  margin-bottom: 40px;
 }
 </style>

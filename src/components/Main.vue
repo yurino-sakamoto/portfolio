@@ -1,11 +1,11 @@
 <template>
   <div id="mainSection">
-    <div class="userName">
+    <h1 class="userName">
       Y.Sakamoto
-    </div>
-    <div class="companyname">
+    </h1>
+    <h1 class="companyname">
       Seattleconsulting
-    </div>
+    </h1>
     <img
       class="myphoto"
       src="../assets/IMG_1386 2.jpg"
@@ -22,15 +22,16 @@
   width: 100%;
   background: linear-gradient(to bottom, #80e1f7, #06c1e6);
   padding-bottom: 20px;
-  margin: 20px 0;
+  margin-bottom: 20px;
+  position: fixed;
+  top: 60px;
 }
 
 .userName {
   color: #fff;
   font-family: 'Noto Sans JP', sans-serif;
   font-weight: bold;
-  font-size: 18px;
-  text-shadow: 1px 1px #fff;
+  text-shadow: 1px 1px gray;
   border-bottom: 1px solid white;
   width: 30%;
   margin: 0 auto;
@@ -41,8 +42,7 @@
   color: #fff;
   font-family: 'Noto Sans JP', sans-serif;
   font-weight: bold;
-  font-size: 18px;
-  text-shadow: 1px 1px #fff;
+  text-shadow: 1px 1px gray;
   padding: 10px;
 }
 

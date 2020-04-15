@@ -7,21 +7,16 @@ export default {
   data () {
     return {
       data: {
-        labels: ['Java', 'Ruby', 'RubyOnRails', 'MySQL', 'Vue', 'June'],
+        labels: ['Java', 'Ruby', 'RubyOn', 'MySQL'],
         datasets: [
           {
             label: 'スキル詳細',
-            data: [2, 2, 2, 2, 2, 2],
+            data: [2, 2, 2, 2],
             backgroundColor: [
-              'rgba(255, 99, 132, 0.2)',
+              'rgba(13, 29, 245, 0.1)',
             ],
             borderColor: [
-              'rgba(255, 99, 132, 1)',
-              'rgba(54, 162, 235, 1)',
-              'rgba(255, 206, 86, 1)',
-              'rgba(75, 192, 192, 1)',
-              'rgba(153, 102, 255, 1)',
-              'rgba(255, 159, 64, 1)'
+              'rgba(13, 29, 245, 0.1)'
             ],
             borderWidth: 1
           },
