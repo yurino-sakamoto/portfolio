@@ -1,12 +1,15 @@
 <template>
   <div id="skillSection">
-    <div class="skillTitle">
+    <h1 class="skillTitle">
       Skill Set
-    </div>
+    </h1>
     <div class="skillExplain">
       修練の末に身につけたスキルをまとめました。フロントエンドを興味があり、
       デザインなども同時に学習していきたいと考えています。さらに高度な技術を身につけるために、
       バックエンド系の開発に携わる機会も増やし、専門性を高めたいと考えています。
+      記載はありませんが、GoogleアナリティクスやSEO関連に携わった経験があります。
+      また、以前インターンをしていた会社では記事のライティングとSNS周りの業務を行っていました。
+      これらの知識も生かして業務を行なえればと考えています。
     </div>
     <label>
       <a
@@ -31,17 +34,18 @@
     <div class="skillList">
       <div
         class="Front-end"
-        :class="{'active': FEclicked}"
+        :class="{'FEactive': FEclicked}"
       >
         <p>HTML</p>
         <p>CSS</p>
         <p>JavaScript</p>
         <p>SCSS</p>
         <p>Vue</p>
+        <p>WordPress</p>
       </div>
       <div
         class="Back-end"
-        :class="{'active': BKclicked}"
+        :class="{'BKactive': BKclicked}"
       >
         <p>Java</p>
         <p>Ruby</p>
@@ -50,7 +54,7 @@
       </div>
       <div
         class="DevOps"
-        :class="{'active': Devclicked}"
+        :class="{'Devactive': Devclicked}"
       >
         <p>Linux</p>
         <p>Node</p>
@@ -123,15 +127,14 @@ export default {
 .skillTitle {
   color: #20879f;
   font-family: 'Noto Sans JP', sans-serif;
-  font-size: 18px;
   font-weight: bold;
-  text-shadow: 1px 1px #fff;
+  text-shadow: 1px 1px gray;
 }
 
 .skillExplain {
   color: #707070;
   font-family: 'Noto Sans JP', sans-serif;
-  font-size: 12px;
+  font-size: 18px;
   overflow-wrap: normal;
   width: 70%;
   margin: 0 auto;
@@ -141,35 +144,31 @@ export default {
 .gitHubLabel {
   color: #20879f;
   font-family: 'Noto Sans JP', sans-serif;
-  font-size: 12px;
 }
 
-.gitHubLink {
+/* リンクの文字の変更 */
+.githubLink {
   color: #20879f;
   font-family: 'Noto Sans JP', sans-serif;
-  font-size: 12px;
   margin-bottom: 10px;
+  font-size: 18px;
 }
 
+/* カテゴリー関連 */
 .skillCategories {
   width: 70%;
   margin: 0 auto;
   display: block;
+  padding-top: 10px;
+  font-size: 26px;
 }
 
+/* [カテゴリー関連]ジャンル別設定 */
 .cateFront-end {
   padding: 0 5px;
   display: inline-block;
   margin: 0 auto;
   color: red;
-}
-
-.active {
-  background-color: rgba(235, 236, 236, 0.925);
-}
-
-.cateFront-end:active {
-  background-color: red;
 }
 
 .cateBack-end {
@@ -179,10 +178,6 @@ export default {
   color: blue;
 }
 
-.cateBack-end:active {
-  background-color: blue;
-}
-
 .cateDevelop {
   padding: 0 5px;
   display: inline-block;
@@ -190,37 +185,27 @@ export default {
   color: purple;
 }
 
-.cateDevelop:active {
-  background-color: purple;
-}
-
-.skillGraph {
-  width: 50%;
+/* [スキルリスト]全体 */
+.skillList {
+  width: 70%;
   margin: 0 auto;
-  margin-bottom: 20px;
+  font-size: 18px;
 }
 
-.BKsee {
-  display: none;
-}
-
-.DevSee {
-  display: none;
-}
-
+/* [スキルリスト]通常状態 */
 .Front-end p {
   color: red;
   margin: 10px;
   float: left;
-  border: solid 1px #000;
+  border: solid 1px gray;
   padding: 0 5px;
 }
 
 .Back-end p {
-  color: green;
+  color: blue;
   margin: 10px;
   float: left;
-  border: solid 1px #000;
+  border: solid 1px gray;
   padding: 0 5px;
 }
 
@@ -228,13 +213,28 @@ export default {
   color: purple;
   margin: 10px;
   float: left;
-  border: solid 1px #000;
+  border: solid 1px gray;
   padding: 0 5px;
 }
 
-.skillList {
-  width: 70%;
-  margin: 0 auto;
+/* [スキルリスト]ボタンを押したとき */
+.FEactive p {
+  background-color: rgba(216, 42, 29, 0.1);
 }
 
+.BKactive p {
+  background-color: rgba(13, 29, 245, 0.1);
+}
+
+.Devactive p {
+  background-color: rgba(153, 2, 223, 0.1);
+}
+
+
+/* グラフ関連 */
+.skillGraph {
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
 </style>

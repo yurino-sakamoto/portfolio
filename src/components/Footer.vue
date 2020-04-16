@@ -33,7 +33,7 @@
   color: #000;
   font-family: 'Noto Sans JP', sans-serif;
   font-weight: bold;
-  font-size: 12px;
+  font-size: 18px;
   text-shadow: 1px 1px #fff;
 }
 

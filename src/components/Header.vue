@@ -59,17 +59,18 @@ export default {
 
 <style scope>
 
-.headerSection {
+#headerSection {
   background: #f3f3f3;
   width: 100%;
-  height: 40px;
+  height: auto;
+  position: fixed;
 }
 
 .humberger {
   font-family: 'Noto Sans JP', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  height: auto;
+  height: 60px;
   display: block;
   text-align: left;
 }
@@ -77,6 +78,9 @@ export default {
 .menu {
   display: block;
   font-size: 30px;
+  color: black;
+  margin-bottom: 10px;
+  border-bottom: 1px solid gray;
 }
 </style>
 
