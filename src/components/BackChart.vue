@@ -7,17 +7,13 @@ export default {
   data () {
     return {
       data: {
-        labels: ['Java', 'Ruby', 'RubyOn', 'MySQL'],
+        labels: ['Java', 'Ruby', 'RubyOnRails', 'MySQL'],
         datasets: [
           {
             label: 'スキル詳細',
-            data: [2, 2, 2, 2],
-            backgroundColor: [
-              'rgba(13, 29, 245, 0.1)',
-            ],
-            borderColor: [
-              'rgba(13, 29, 245, 0.1)'
-            ],
+            data: [3, 2, 1, 2],
+            backgroundColor: 'rgba(13, 29, 245, 0.1)',
+            borderColor: 'blue',
             borderWidth: 1
           },
 
@@ -25,11 +21,18 @@ export default {
       },
       options: {
         scale: {
+          pointLabels: {       // 軸のラベル（"国語"など）
+          fontSize: 22,         // 文字の大きさ
+          },
           ticks:{
-			beginAtZero:true,
-			max:5,
-			min:0
-		}
+          beginAtZero:true,
+          max:5,
+          min:0,
+          stepSize: 1
+          }
+        },
+        legend: {
+          display:false
         }
       }
     }

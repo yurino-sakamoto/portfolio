@@ -18,13 +18,24 @@
 </script>
 
 <style scope>
+
+@media (max-width: 1020px) {
+  #mainSection {
+    width: 100%;
+    background: linear-gradient(to bottom, #80e1f7, #06c1e6);
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    position: fixed;
+    z-index: 1;
+    top: 60px;
+  }
+}
+
 #mainSection {
   width: 100%;
   background: linear-gradient(to bottom, #80e1f7, #06c1e6);
   padding-bottom: 20px;
   margin-bottom: 20px;
-  position: fixed;
-  top: 60px;
 }
 
 .userName {

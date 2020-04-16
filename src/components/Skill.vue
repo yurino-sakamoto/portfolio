@@ -5,11 +5,11 @@
     </h1>
     <div class="skillExplain">
       修練の末に身につけたスキルをまとめました。フロントエンドを興味があり、
-      デザインなども同時に学習していきたいと考えています。さらに高度な技術を身につけるために、
-      バックエンド系の開発に携わる機会も増やし、専門性を高めたいと考えています。
-      記載はありませんが、GoogleアナリティクスやSEO関連に携わった経験があります。
-      また、以前インターンをしていた会社では記事のライティングとSNS周りの業務を行っていました。
-      これらの知識も生かして業務を行なえればと考えています。
+      デザインなども同時に身につけていきたいと考えています。
+      さらに高度な技術を身につけるために、バックエンド系の開発に携わる機会も増やし、専門性を高めたいと考えています。
+      記載はありませんが、GoogleアナリティクスやSEO関連に関する知識も少しあります。
+      また、学生時代に仕事として記事のライティングとSNS周りの業務を行った経験があります。
+      これらの知識も生かして業務を行なっていきたいと考えています。
     </div>
     <label>
       <a
@@ -42,6 +42,7 @@
         <p>SCSS</p>
         <p>Vue</p>
         <p>WordPress</p>
+        <p>jQuery</p>
       </div>
       <div
         class="Back-end"
@@ -63,7 +64,10 @@
         <p>Firebase</p>
       </div>
     </div>
-    <div class="skillGraph">
+    <div
+      id="hrvision"
+      class="skillGraph"
+    >
       <div v-if="FEclicked">
         <FrontChart />
       </div>
@@ -129,6 +133,7 @@ export default {
   font-family: 'Noto Sans JP', sans-serif;
   font-weight: bold;
   text-shadow: 1px 1px gray;
+  margin-top: 30px;
 }
 
 .skillExplain {
@@ -237,4 +242,28 @@ export default {
   margin: 0 auto;
   margin-bottom: 20px;
 }
+
+
+/* @media screen and (min-width: 980px) { */
+
+/* 980px以上用（PC用）の記述 */
+
+/* #skillSection{ */
+
+/*  width:50% */
+
+/* } */
+
+/* .skillExplain { */
+
+/*  float:left; */
+
+/*  display:block; */
+
+/*  width:70%; */
+
+/* } */
+
+/* } */
+
 </style>
