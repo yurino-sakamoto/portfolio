@@ -5,6 +5,7 @@
     <About />
     <Skill />
     <Vision />
+    <Contact />
     <Footer />
   </div>
 </template>
@@ -16,6 +17,7 @@ import  About from './components/About.vue'
 import  Skill from './components/Skill.vue'
 import  Vision from './components/Vision.vue'
 import  Footer from './components/Footer.vue'
+import  Contact from './components/Contact.vue'
 
 export default {
   name: 'App',
@@ -25,27 +27,38 @@ export default {
     About,
     Skill,
     Vision,
-    Footer
+    Footer,
+    Contact
   },
 }
+
+
 </script>
 
-<style lang="scss">
-@import "~bootstrap/scss/bootstrap-reboot",
-  "~bootstrap/scss/buttons";
 
-</style>
 
-<style>
+<style scoped>
 /* Google fontsで導入したいfonts から@importのコードを取得 */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
 
 #app {
-  font-family: 'Noto Sans JP', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  width: 800px;
 }
+
+@media (max-width: 767px) {
+  #app {
+    width: 800px;
+  }
+}
+
+/* @media (max-width: 1020px) { */
+
+/*  #app { */
+
+/*    width: 800px; */
+
+/*  } */
+
+/* } */
+
 </style>

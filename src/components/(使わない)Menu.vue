@@ -1,6 +1,5 @@
 <template>
   <div id="drawerSection">
-    <img src="">
     <ul>
       <li>Home</li>
       <li>About Me</li>
@@ -17,20 +16,18 @@
 </script>
 
 <style scope>
-  #drawerSection {
-    background-color: #f3f3f3;
-    width: 100%;
-  }
+#drawerSection {
+  width: 100%;
+}
 
-  ul {
-    display: block;
-    background: #fff;
-    width: 100%;
-    list-style: none;
-  }
+ul {
+  display: block;
+  width: 100%;
+  border: 1px solid gray;
+}
 
-  a {
-    width: 100%;
-    display: flex;
-  }
+a {
+  width: 100%;
+  display: flex;
+}
 </style>
