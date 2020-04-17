@@ -6,6 +6,7 @@
       @click="toggle"
     >
     <Drawer
+      id="drawer"
       align="left"
       :closeable="true"
       @close="toggle"
@@ -22,15 +23,20 @@
           @click="toggle"
         >About Me</a>
         <a
-          href="#skillSection"
+          href="#hrskill"
           class="menu"
           @click="toggle"
         >Skill Sets</a>
         <a
-          href="#visionSection"
+          href="#hrvision"
           class="menu"
           @click="toggle"
         >Vision</a>
+        <a
+          href="#hrcontact"
+          class="menu"
+          @click="toggle"
+        >Contact</a>
       </div>
     </Drawer>
   </div>
@@ -58,12 +64,20 @@ export default {
 </script>
 
 <style scope>
+@media (max-width: 1020px) {
+  #headerSection {
+    background: #f3f3f3;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    z-index: 5;
+  }
+}
 
 #headerSection {
   background: #f3f3f3;
   width: 100%;
   height: auto;
-  position: fixed;
 }
 
 .humberger {
@@ -81,6 +95,11 @@ export default {
   color: black;
   margin-bottom: 10px;
   border-bottom: 1px solid gray;
+}
+
+#drawer {
+  position: fixed;
+  z-index: 10;
 }
 </style>
 

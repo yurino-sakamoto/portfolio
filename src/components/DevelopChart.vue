@@ -11,13 +11,9 @@ export default {
         datasets: [
           {
             label: 'スキル詳細',
-            data: [2, 2, 2, 2, 2],
-            backgroundColor: [
-              'rgba(153, 2, 223, 0.1)',
-            ],
-            borderColor: [
-              'rgba(153, 2, 223, 0.1)'
-            ],
+            data: [3, 1, 3, 3, 2],
+            backgroundColor: 'rgba(153, 2, 223, 0.1)',
+            borderColor: 'purple',
             borderWidth: 1
           },
 
@@ -25,11 +21,18 @@ export default {
       },
       options: {
         scale: {
+          pointLabels: {       // 軸のラベル（"国語"など）
+           fontSize: 22,         // 文字の大きさ
+                },
           ticks:{
-			beginAtZero:true,
-			max:5,
-			min:0
-		}
+            beginAtZero:true,
+            max:5,
+            min:0,
+            stepSize: 1
+          }
+        },
+        legend: {
+          display:false
         }
       }
     }

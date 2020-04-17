@@ -1,14 +1,18 @@
 <template>
   <div id="visionSection">
-    <h1 class="visionTitle">
+    <h1
+      id="hrcontact"
+      class="visionTitle"
+    >
       Vision
     </h1>
     <div class="visionExplain">
       <p>
-        修練の末に身につけたスキルをまとめました。幅広く知識を身につけた後に、より専門的に学んでいこうと思います。
-        プライベートでフロントエンドを使用することがあるので、バックエンドをメインで行い、後にフロントの方に移行していきたいと考えています。
-        今後の予定としては業務の面では少しでも力になれるように頑張ります。
-        プライベートでは自身の所有するサイトをより大きくしていければと考えています。
+        今後のビジョンを記載します。今後は幅広く知識を身につけた後に、より専門的に学んでいこうと考えています。
+        本命はUI・UXですが、まずバックエンドを行い、フロントの方に移行していきたいと考えています。
+        本当に厳しい世の中なので、自分に厳しく、日々精進の心を忘れずに頑張ろうと思います。
+        将来の夢はいいお母さんです！
+        周りの人への感謝を忘れずに頑張ります。
       </p>
     </div>
   </div>
@@ -19,10 +23,11 @@
 
 <style scope>
 #visionSection {
-  background: #f5f5f5;
+  border-top: 1px solid gray;
   width: 70%;
   margin: 0 auto;
   padding: 0 10px;
+  border-bottom: 1px solid gray;
 }
 
 .visionTitle {
@@ -35,10 +40,10 @@
 }
 
 .visionExplain p {
-  color: #707070;
   font-family: 'Noto Sans JP', sans-serif;
   font-size: 18px;
   padding: 5px 0 25px 0;
   margin-bottom: 40px;
+  color: #707070;
 }
 </style>

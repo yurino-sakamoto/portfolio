@@ -16,7 +16,6 @@
 </template>
 
 <script>
-
 </script>
 
 <style scope>
@@ -25,7 +24,7 @@
 #footerSection {
   background: linear-gradient(to bottom, #80e1f7, #06c1e6);
   width: 100%;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
   height: auto;
 }
 
@@ -41,7 +40,6 @@
   height: 30px;
   width: 30px;
   position: relative;
-  margin-bottom: 10px;
   top: -10px;
 }
 </style>

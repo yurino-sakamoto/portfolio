@@ -12,26 +12,27 @@ export default {
           {
             label: 'スキル詳細',
             data: [3, 3, 2, 1, 2, 4, 2],
-            backgroundColor: [
-              'rgba(255, 99, 132, 0.2)',
-            ],
-            borderColor: [
-              'rgba(255, 99, 132, 1)'
-            ],
+            backgroundColor: 'rgba(255, 99, 132, 0.2)',
+            borderColor: "red",
             borderWidth: 2,
             pointDot:false,
-            scaleFontSize: 20,
           },
         ]
       },
       options: {
         scale: {
+          pointLabels: {       // 軸のラベル（"国語"など）
+            fontSize: 22,         // 文字の大きさ
+                },
           ticks:{
-      beginAtZero:true,
-
-			max:5,
-      min:0
-		}
+            beginAtZero:true,
+            max:5,
+            min:0,
+            stepSize: 1
+          }
+        },
+        legend: {
+          display:false
         }
       }
     }

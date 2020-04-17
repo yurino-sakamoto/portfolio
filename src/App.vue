@@ -5,6 +5,7 @@
     <About />
     <Skill />
     <Vision />
+    <Contact />
     <Footer />
   </div>
 </template>
@@ -16,6 +17,7 @@ import  About from './components/About.vue'
 import  Skill from './components/Skill.vue'
 import  Vision from './components/Vision.vue'
 import  Footer from './components/Footer.vue'
+import  Contact from './components/Contact.vue'
 
 export default {
   name: 'App',
@@ -25,7 +27,8 @@ export default {
     About,
     Skill,
     Vision,
-    Footer
+    Footer,
+    Contact
   },
 }
 
@@ -48,10 +51,14 @@ export default {
   }
 }
 
-@media (max-width: 1020px) {
-  #app {
-    width: 800px;
-  }
-}
+/* @media (max-width: 1020px) { */
+
+/*  #app { */
+
+/*    width: 800px; */
+
+/*  } */
+
+/* } */
 
 </style>
