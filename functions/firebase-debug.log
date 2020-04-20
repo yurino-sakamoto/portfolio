@@ -1,0 +1,49 @@
+[debug] [2020-04-20T07:08:52.241Z] ----------------------------------------------------------------------
+[debug] [2020-04-20T07:08:52.243Z] Command:       /Users/yurino/.nodebrew/node/v8.13.0/bin/node /Users/yurino/.nodebrew/current/bin/firebase emulators:start --only functions
+[debug] [2020-04-20T07:08:52.244Z] CLI Version:   8.0.1
+[debug] [2020-04-20T07:08:52.244Z] Platform:      darwin
+[debug] [2020-04-20T07:08:52.244Z] Node Version:  v8.13.0
+[debug] [2020-04-20T07:08:52.244Z] Time:          Mon Apr 20 2020 16:08:52 GMT+0900 (JST)
+[debug] [2020-04-20T07:08:52.244Z] ----------------------------------------------------------------------
+[debug] [2020-04-20T07:08:52.244Z] 
+[debug] [2020-04-20T07:08:52.252Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-04-20T07:08:52.252Z] > authorizing via signed-in user
+[info] i  emulators: Starting emulators: functions
+[debug] [2020-04-20T07:08:52.315Z] [hub] writing locator at /var/folders/tq/mc_nmz4902x5_mr41hbd7q4m0000gn/T/hub-myfirstfirebase-1260d.json
+[info] ✔  hub: emulator hub started at http://localhost:4400
+[info] ✔  functions: Using node@8 from host.
+[info] ✔  functions: functions emulator started at http://localhost:5001
+[info] i  functions: Watching "/Users/yurino/seattle-academy20/portfolio/functions" for Cloud Functions...
+[debug] [2020-04-20T07:08:52.613Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-04-20T07:08:52.615Z] [worker-pool] Adding worker with key ~diagnostic~, total=1 
+[debug] [2020-04-20T07:08:52.616Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-04-20T07:08:52.616Z] [worker-~diagnostic~-e92597cc-5d31-4607-8114-dadf7449e3c9]: Assigning socketPath: /var/folders/tq/mc_nmz4902x5_mr41hbd7q4m0000gn/T/fire_emu_3643.sock 
+[debug] [2020-04-20T07:08:52.617Z] [worker-~diagnostic~-e92597cc-5d31-4607-8114-dadf7449e3c9]: BUSY 
+[debug] [2020-04-20T07:08:52.904Z] [runtime-status] [3643] Functions runtime initialized. {"cwd":"/Users/yurino/seattle-academy20/portfolio/functions","node_version":"8.13.0"} 
+[debug] [2020-04-20T07:08:52.904Z] [runtime-status] [3643] Disabled runtime features: undefined 
+[debug] [2020-04-20T07:08:52.908Z] [runtime-status] [3643] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"/Users/yurino/seattle-academy20/portfolio/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-04-20T07:08:52.911Z] [runtime-status] [3643] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/Users/yurino/seattle-academy20/portfolio/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-20T07:08:52.915Z] [runtime-status] [3643] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-04-20T07:08:52.969Z] [runtime-status] [3643] Checked functions.config() {"config":{}} 
+[debug] [2020-04-20T07:08:52.970Z] [runtime-status] [3643] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/Users/yurino/seattle-academy20/portfolio/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-20T07:08:52.971Z] [runtime-status] [3643] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"/Users/yurino/seattle-academy20/portfolio/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-04-20T07:08:52.971Z] [runtime-status] [3643] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/Users/yurino/seattle-academy20/portfolio/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-20T07:08:52.971Z] [runtime-status] [3643] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.10.0","resolution":"/Users/yurino/seattle-academy20/portfolio/functions/node_modules/firebase-admin/lib/index.js"}} 
+[warn] ⚠  /Users/yurino/seattle-academy20/portfolio/functions/index.js:23
+​
+^
+
+SyntaxError: Invalid or unexpected token
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:617:28)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Module.require (module.js:597:17)
+    at require (internal/module.js:11:18)
+    at /Users/yurino/.nodebrew/node/v8.13.0/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:656:33
+[warn] ⚠  We were unable to load your functions code. (see above)
+[debug] [2020-04-20T07:08:52.991Z] [worker-~diagnostic~-e92597cc-5d31-4607-8114-dadf7449e3c9]: exited 
+[debug] [2020-04-20T07:08:52.992Z] [worker-~diagnostic~-e92597cc-5d31-4607-8114-dadf7449e3c9]: FINISHED 
