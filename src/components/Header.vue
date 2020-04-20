@@ -66,7 +66,7 @@ export default {
 <style scope>
 @media (max-width: 1020px) {
   #headerSection {
-    background: #f3f3f3;
+    background: white;
     width: 100%;
     height: auto;
     position: fixed;
@@ -75,7 +75,7 @@ export default {
 }
 
 #headerSection {
-  background: #f3f3f3;
+  background: white;
   width: 100%;
   height: auto;
 }
@@ -87,6 +87,7 @@ export default {
   height: 60px;
   display: block;
   text-align: left;
+  cursor: pointer;
 }
 
 .menu {
@@ -101,6 +102,11 @@ export default {
   position: fixed;
   z-index: 10;
 }
+
+.vue-simple-drawer {
+  background-color: white !important;
+}
+
 </style>
 
 <style lang="scss">
