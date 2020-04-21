@@ -1,5 +1,6 @@
 <script>
 import { Radar } from '../../../portfolio/node_modules/vue-chartjs';
+//import { store } from '../store';
 
 export default {
   name: 'Chart',
@@ -7,11 +8,11 @@ export default {
   data () {
     return {
       data: {
-        labels: ['HTML', 'CSS', 'Javascript', 'SCSS', 'Vue', 'WordPress','jQuery'],
+        labels: [],
         datasets: [
           {
             label: 'スキル詳細',
-            data: [3, 3, 2, 1, 2, 4, 2],
+            data: [],
             backgroundColor: 'rgba(255, 99, 132, 0.2)',
             borderColor: "red",
             borderWidth: 2,
@@ -37,6 +38,9 @@ export default {
       }
     }
   },
+  //src:{
+  //  store
+  //},
   mounted () {
     this.renderChart(this.data, this.options)
   }
