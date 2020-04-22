@@ -68,13 +68,13 @@
       id="hrvision"
       class="skillGraph"
     >
-      <div v-if="FEclicked">
+      <div v-if="FEclicked && loaded">
         <FrontChart />
       </div>
-      <div v-if="BKclicked">
+      <div v-if="BKclicked && loaded">
         <BackChart />
       </div>
-      <div v-if="Devclicked">
+      <div v-if="Devclicked && loaded">
         <DevelopChart />
       </div>
     </div>
@@ -98,9 +98,14 @@ export default {
     return{
       FEclicked:true,
       BKclicked:false,
-      Devcliced:false
+      Devclicked:false
     }
   },
+    computed:{
+      loaded(){
+        return this.$store.state.loaded
+      }
+    },
     methods:{
       FEchange(){
         this.FEclicked=true;
@@ -116,7 +121,7 @@ export default {
         this.BKclicked=false;
         this.FEclicked=false;
         this.Devclicked=true;
-      }
+      },
     }
 }
 </script>

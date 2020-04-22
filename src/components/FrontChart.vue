@@ -38,12 +38,21 @@ export default {
       }
     }
   },
-  //src:{
+  //components:{
   //  store
   //},
   mounted () {
+    this.getChartname();
     this.renderChart(this.data, this.options)
+  },
+  methods:{
+    getChartname(){
+      const names = this.$store.getters.skillNamef
+      this.data.labels = names
+
+      const scores = this.$store.getters.skillscoref
+      this.data.datasets[0].data = scores
+    }
   }
 }
-
 </script>
