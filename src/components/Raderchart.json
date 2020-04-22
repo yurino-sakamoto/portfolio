@@ -1,19 +1,76 @@
 {
-  "users": [
+  "skills":[
     {
-      "user_id": "A0001",
-      "user_name": "chiyo",
-      "age": 9
+      "Front-end":[
+        {
+          "labels":"CSS",
+          "data":"2"
+        },
+        {
+          "labels":"HTML",
+          "data":"2"
+        },
+        {
+          "labels":"JavaScript",
+          "data":"2"
+        },
+        {
+          "labels":"WordPress",
+          "data":"2"
+        },
+        {
+          "labels":"Vue",
+          "data":"2"
+        },
+        {
+          "labels":"SCSS",
+          "data":"2"
+        }
+      ]
     },
     {
-      "user_id": "A0002",
-      "user_name": "eru",
-      "age": 5
+      "Back-end":[
+        {
+          "labels":"Java",
+          "data":"2"
+        },
+        {
+          "labels":"Ruby",
+          "data":"2"
+        },
+        {
+          "labels":"RubyOnRail",
+          "data":"2"
+        },
+        {
+          "labels":"MySQL",
+          "data":"2"
+        }
+      ]
     },
     {
-      "user_id": "A0003",
-      "user_name": "otome",
-      "age": 13
+      "DevOps":[
+        {
+          "labels":"Linax",
+          "data":"2"
+        },
+        {
+          "labels":"Node",
+          "data":"2"
+        },
+        {
+          "labels":"Git",
+          "data":"2"
+        },
+        {
+          "labels":"GitHub",
+          "data":"2"
+        },
+        {
+          "labels":"Firebase",
+          "data":"2"
+        }
+      ]
     }
   ]
 }

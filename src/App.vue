@@ -4,6 +4,7 @@
     <Main />
     <About />
     <Skill />
+    <!-- <div>{{ this.skills }}</div> -->
     <Vision />
     <Contact />
     <Footer />
@@ -30,6 +31,11 @@ export default {
     Footer,
     Contact
   },
+  data() {
+    return {
+      skills: []
+    }
+  },
   mounted () {
     this.getSkills();
   },
@@ -40,7 +46,8 @@ export default {
       // this.skillsを一時変数のitemsに参照コピーする
       let items = this.skills;
       // axios.getを用いてデプロイ済のfunctionにアクセスする
-      this.axios.get('https://us-central1-myfirstfirebase-1260d.cloudfunctions.net/users')
+      this.axios.get('https://us-central1-myfirstfirebase-1260d.cloudfunctions.net/skills')
+
         .then((response) => {
           response.data.forEach(function(skill) {
             // 取得したデータを１件ずつ配列に設定する
@@ -50,12 +57,10 @@ export default {
         .catch((e) => {
           alert(e);
         });
-      console.log('items')
     }
   }
 
 }
-//https://us-central1-myfirstfirebase-1260d.cloudfunctions.net/users
 
 </script>
 
