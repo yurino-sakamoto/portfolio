@@ -7,11 +7,11 @@ export default {
   data () {
     return {
       data: {
-        labels: ['Java', 'Ruby', 'RubyOnRails', 'MySQL'],
+        labels: [],
         datasets: [
           {
             label: 'スキル詳細',
-            data: [3, 2, 1, 2],
+            data: [],
             backgroundColor: 'rgba(13, 29, 245, 0.1)',
             borderColor: 'blue',
             borderWidth: 1
@@ -38,7 +38,17 @@ export default {
     }
   },
   mounted () {
+    this.getChartname();
     this.renderChart(this.data, this.options)
+  },
+  methods:{
+    getChartname(){
+      const names = this.$store.getters.skillNameb
+      this.data.labels = names
+
+      const scores = this.$store.getters.skillscoreb
+      this.data.datasets[0].data = scores
+    }
   }
 }
 

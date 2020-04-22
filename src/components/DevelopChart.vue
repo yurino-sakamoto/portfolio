@@ -7,11 +7,11 @@ export default {
   data () {
     return {
       data: {
-        labels: ['Linux', 'Node', 'Git', 'Github', 'Firebase'],
+        labels: [],
         datasets: [
           {
             label: 'スキル詳細',
-            data: [3, 1, 3, 3, 2],
+            data: [],
             backgroundColor: 'rgba(153, 2, 223, 0.1)',
             borderColor: 'purple',
             borderWidth: 1
@@ -38,7 +38,17 @@ export default {
     }
   },
   mounted () {
+    this.getChartname();
     this.renderChart(this.data, this.options)
+  },
+  methods:{
+    getChartname(){
+      const names = this.$store.getters.skillNamed
+      this.data.labels = names
+
+      const scores = this.$store.getters.skillscored
+      this.data.datasets[0].data = scores
+    }
   }
 }
 
