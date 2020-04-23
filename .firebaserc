@@ -1,5 +1,21 @@
 {
   "projects": {
     "default": "myfirstfirebase-1260d"
+  },
+  "targets": {
+    "myfirstfirebase-1260d": {
+      "hosting": {
+        "portfolio": [
+          "myfirstfirebase-1260d"
+        ]
+      }
+    },
+    "develop-754a7": {
+      "hosting": {
+        "portfolio": [
+          "develop-754a7"
+        ]
+      }
+    }
   }
 }
