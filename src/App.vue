@@ -4,9 +4,11 @@
     <Main />
     <About />
     <Skill />
+    <!-- <div>{{ this.skills }}</div> -->
     <Vision />
     <Contact />
     <Footer />
+    <Sample />
   </div>
 </template>
 
@@ -18,6 +20,8 @@ import  Skill from './components/Skill.vue'
 import  Vision from './components/Vision.vue'
 import  Footer from './components/Footer.vue'
 import  Contact from './components/Contact.vue'
+import Sample from './components/Sample/Sample.vue'
+import {mapActions} from 'vuex'
 
 export default {
   name: 'App',
@@ -28,10 +32,50 @@ export default {
     Skill,
     Vision,
     Footer,
-    Contact
+    Contact,
+    Sample
   },
-}
+  computed: {
+  SkillCategories(){
+  return this.$store.getters.SkillCategories
+  },
+  },
+  mounted () {
+  this.updateSkillCategories();
+  },
+  methods: {
+  ...mapActions(['updateSkillCategories']),
+  }
 
+  //data() {
+  //  return {
+  //    skills: []
+  //  }
+  //},
+  //mounted () {
+  //  this.getSkills();
+  //},
+  //methods: {
+  //  getSkills() {
+  //    // dataのスキルを初期化する
+  //    this.skills = [];
+  //    // this.skillsを一時変数のitemsに参照コピーする
+  //    let items = this.skills;
+  //    // axios.getを用いてデプロイ済のfunctionにアクセスする
+  //    this.axios.get('https://us-central1-myfirstfirebase-1260d.cloudfunctions.net/skills')
+  //      .then((response) => {
+  //        response.data.forEach(function(skill) {
+  //          // 取得したデータを１件ずつ配列に設定する
+  //          items.push(skill);
+  //        })
+  //      })
+  //      .catch((e) => {
+  //        alert(e);
+  //      });
+  //  }
+  //}
+
+}
 
 </script>
 
@@ -50,15 +94,4 @@ export default {
     width: 800px;
   }
 }
-
-/* @media (max-width: 1020px) { */
-
-/*  #app { */
-
-/*    width: 800px; */
-
-/*  } */
-
-/* } */
-
 </style>

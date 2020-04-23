@@ -6,16 +6,16 @@
     <div class="skillExplain">
       修練の末に身につけたスキルをまとめました。フロントエンドを興味があり、
       デザインなども同時に身につけていきたいと考えています。
-      さらに高度な技術を身につけるために、バックエンド系の開発に携わる機会も増やし、専門性を高めたいと考えています。
-      記載はありませんが、GoogleアナリティクスやSEO関連に関する知識も少しあります。
-      また、学生時代に仕事として記事のライティングとSNS周りの業務を行った経験があります。
-      これらの知識も生かして業務を行なっていきたいと考えています。
+      さらに高度な技術を身につけるために、バックエンド系の開発に携わる機会も増やし、専門性を高めたいです。
+      記載はありませんが、Googleアナリティクス、ライティング、SEO、SNS関連の知識もあります。
+      これらの知識も生かし、広い視野を持って業務をおこないたいと考えています。
     </div>
     <label>
+      <a class="Github">gitHub：</a>
       <a
         class="githubLink"
         href="https://github.com/yurino-sakamoto/portfolio"
-      >gitHub:https://github.com/yurino-sakamoto/portfolio</a>
+      >https://github.com/yurino-sakamoto/portfolio</a>
     </label>
     <a class="skillCategories">
       <p
@@ -68,13 +68,13 @@
       id="hrvision"
       class="skillGraph"
     >
-      <div v-if="FEclicked">
+      <div v-if="FEclicked && loaded">
         <FrontChart />
       </div>
-      <div v-if="BKclicked">
+      <div v-if="BKclicked && loaded">
         <BackChart />
       </div>
-      <div v-if="Devclicked">
+      <div v-if="Devclicked && loaded">
         <DevelopChart />
       </div>
     </div>
@@ -98,9 +98,14 @@ export default {
     return{
       FEclicked:true,
       BKclicked:false,
-      Devcliced:false
+      Devclicked:false
     }
   },
+    computed:{
+      loaded(){
+        return this.$store.state.loaded
+      }
+    },
     methods:{
       FEchange(){
         this.FEclicked=true;
@@ -116,7 +121,7 @@ export default {
         this.BKclicked=false;
         this.FEclicked=false;
         this.Devclicked=true;
-      }
+      },
     }
 }
 </script>
@@ -146,6 +151,11 @@ export default {
   margin-bottom: 20px;
 }
 
+label {
+  color: #20879f;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
 .gitHubLabel {
   color: #20879f;
   font-family: 'Noto Sans JP', sans-serif;
@@ -166,6 +176,7 @@ export default {
   display: block;
   padding-top: 10px;
   font-size: 26px;
+  cursor: pointer;
 }
 
 /* [カテゴリー関連]ジャンル別設定 */
@@ -200,7 +211,7 @@ export default {
 /* [スキルリスト]通常状態 */
 .Front-end p {
   color: red;
-  margin: 10px;
+  margin: 5px;
   float: left;
   border: solid 1px gray;
   padding: 0 5px;
@@ -208,7 +219,7 @@ export default {
 
 .Back-end p {
   color: blue;
-  margin: 10px;
+  margin: 5px;
   float: left;
   border: solid 1px gray;
   padding: 0 5px;
@@ -216,7 +227,7 @@ export default {
 
 .DevOps p {
   color: purple;
-  margin: 10px;
+  margin: 5px;
   float: left;
   border: solid 1px gray;
   padding: 0 5px;
