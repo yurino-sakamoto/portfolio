@@ -1,11 +1,11 @@
 <template>
   <div id="mainSection">
-    <h1 class="userName">
+    <p class="username">
       Y.Sakamoto
-    </h1>
-    <h1 class="companyname">
+    </p>
+    <p class="companyname">
       Seattleconsulting
-    </h1>
+    </p>
     <img
       class="myphoto"
       src="../assets/IMG_1386 2.jpg"
@@ -21,10 +21,6 @@
 
 @media (max-width: 1020px) {
   #mainSection {
-    width: 100%;
-    background: linear-gradient(to bottom, #80e1f7, #06c1e6);
-    padding-bottom: 20px;
-    margin-bottom: 20px;
     position: fixed;
     z-index: 1;
     top: 60px;
@@ -32,29 +28,25 @@
 }
 
 #mainSection {
-  width: 100%;
   background: linear-gradient(to bottom, #80e1f7, #06c1e6);
-  padding-bottom: 20px;
-  margin-bottom: 20px;
+  padding: 20px 0;
 }
 
-.userName {
-  color: #fff;
-  font-family: 'Noto Sans JP', sans-serif;
-  font-weight: bold;
-  text-shadow: 1px 1px gray;
+.username {
   border-bottom: 1px solid white;
-  width: 30%;
-  margin: 0 auto;
-  padding: 10px;
+  font-size: 36px;
+  display: inline-block;
 }
 
 .companyname {
+  font-size: 30px;
+}
+
+#mainSection p {
   color: #fff;
-  font-family: 'Noto Sans JP', sans-serif;
-  font-weight: bold;
-  text-shadow: 1px 1px gray;
   padding: 10px;
+  text-shadow: 1px 1px gray;
+  margin: 0 auto;
 }
 
 .myphoto {

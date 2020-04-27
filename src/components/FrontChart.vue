@@ -47,10 +47,10 @@ export default {
   },
   methods:{
     getChartname(){
-      const names = this.$store.getters.skillNamef
+      const names = this.$store.getters.skillName(0)
       this.data.labels = names
 
-      const scores = this.$store.getters.skillscoref
+      const scores = this.$store.getters.skillscore(0)
       this.data.datasets[0].data = scores
     }
   }

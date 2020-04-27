@@ -1,8 +1,11 @@
 <template>
-  <div id="contact">
-    <h2 class="contactTitle">
+  <div
+    id="contact"
+    class="Section"
+  >
+    <h1>
       Contact
-    </h2>
+    </h1>
     <div class="contact-list">
       <p>お名前<input class="contactform"></p>
       <!-- <input>要素を追加してください -->
@@ -30,24 +33,9 @@
 </script>
 
 <style scoped>
-
 #contact {
-  padding: 0 130px 50px 130px;
-  width: 100%;
-}
-
-.contact-list p {
   text-align: left;
-}
-
-.contactTitle {
-  color: #20879f;
-  font-family: 'Noto Sans JP', sans-serif;
-  font-weight: bold;
-  text-shadow: 1px 1px gray;
-  margin: 30px;
-  text-align: left;
-  width: 70%;
+  border-bottom: none;
 }
 
 .contact-submit {

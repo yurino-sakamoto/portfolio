@@ -66,9 +66,6 @@ export default {
 <style scope>
 @media (max-width: 1020px) {
   #headerSection {
-    background: white;
-    width: 100%;
-    height: auto;
     position: fixed;
     z-index: 5;
   }
@@ -77,7 +74,6 @@ export default {
 #headerSection {
   background: white;
   width: 100%;
-  height: auto;
 }
 
 .humberger {
@@ -112,7 +108,4 @@ export default {
 <style lang="scss">
 @import "~bootstrap/scss/bootstrap-reboot",
   "~bootstrap/scss/buttons";
-$--simple-drawer-bg-color:white;
-
-@import "~vue-simple-drawer/src/index"
 </style>
