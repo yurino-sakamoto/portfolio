@@ -21,8 +21,8 @@ export default {
       },
       options: {
         scale: {
-          pointLabels: {       // 軸のラベル（"国語"など）
-          fontSize: 22,         // 文字の大きさ
+          pointLabels: {
+          fontSize: 22,
           },
           ticks:{
           beginAtZero:true,
@@ -43,10 +43,10 @@ export default {
   },
   methods:{
     getChartname(){
-      const names = this.$store.getters.skillNameb
+      const names = this.$store.getters.skillName(1)
       this.data.labels = names
 
-      const scores = this.$store.getters.skillscoreb
+      const scores = this.$store.getters.skillscore(1)
       this.data.datasets[0].data = scores
     }
   }

@@ -1,18 +1,18 @@
 {
   "skills":[
     {
-      "Frontend":[
+      "skillCategory":[
         {
-          "labels":"CSS",
-          "data":"2"
+          "labels":"JavaScript",
+          "data":"1"
         },
         {
           "labels":"HTML",
           "data":"2"
         },
         {
-          "labels":"JavaScript",
-          "data":"1"
+          "labels":"CSS",
+          "data":"2"
         },
         {
           "labels":"WordPress",
@@ -24,23 +24,27 @@
         },
         {
           "labels":"SCSS",
-          "data":"2"
+          "data":"1"
+        },
+        {
+          "labels":"jQuery",
+          "data":"1"
         }
       ]
     },
     {
-      "Backend":[
+      "skillCategory":[
         {
           "labels":"Java",
           "data":"2"
         },
         {
           "labels":"Ruby",
-          "data":"2"
+          "data":"1"
         },
         {
           "labels":"RubyOnRail",
-          "data":"2"
+          "data":"1"
         },
         {
           "labels":"MySQL",
@@ -49,14 +53,14 @@
       ]
     },
     {
-      "DevOps":[
+      "skillCategory":[
         {
-          "labels":"Linax",
-          "data":"2"
+          "labels":"Linux",
+          "data":"3"
         },
         {
           "labels":"Node",
-          "data":"2"
+          "data":"1"
         },
         {
           "labels":"Git",
