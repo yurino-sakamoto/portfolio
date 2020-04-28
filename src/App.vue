@@ -1,14 +1,12 @@
 <template>
-  <div id="app">
-    <Header />
-    <Main />
-    <About />
-    <Skill />
-    <!-- <div>{{ this.skills }}</div> -->
-    <Vision />
-    <Contact />
-    <Footer />
-    <Sample />
+  <div>
+    <Header class="divbig" />
+    <Main class="divbig" />
+    <About class="divsmall" />
+    <Skill class="divsmall" />
+    <Vision class="divsmall" />
+    <Contact class="divsmall" />
+    <Footer class="divbig" />
   </div>
 </template>
 
@@ -20,7 +18,6 @@ import  Skill from './components/Skill.vue'
 import  Vision from './components/Vision.vue'
 import  Footer from './components/Footer.vue'
 import  Contact from './components/Contact.vue'
-import Sample from './components/Sample/Sample.vue'
 import {mapActions} from 'vuex'
 
 export default {
@@ -32,8 +29,7 @@ export default {
     Skill,
     Vision,
     Footer,
-    Contact,
-    Sample
+    Contact
   },
   computed: {
   SkillCategories(){
@@ -46,35 +42,6 @@ export default {
   methods: {
   ...mapActions(['updateSkillCategories']),
   }
-
-  //data() {
-  //  return {
-  //    skills: []
-  //  }
-  //},
-  //mounted () {
-  //  this.getSkills();
-  //},
-  //methods: {
-  //  getSkills() {
-  //    // dataのスキルを初期化する
-  //    this.skills = [];
-  //    // this.skillsを一時変数のitemsに参照コピーする
-  //    let items = this.skills;
-  //    // axios.getを用いてデプロイ済のfunctionにアクセスする
-  //    this.axios.get('https://us-central1-myfirstfirebase-1260d.cloudfunctions.net/skills')
-  //      .then((response) => {
-  //        response.data.forEach(function(skill) {
-  //          // 取得したデータを１件ずつ配列に設定する
-  //          items.push(skill);
-  //        })
-  //      })
-  //      .catch((e) => {
-  //        alert(e);
-  //      });
-  //  }
-  //}
-
 }
 
 </script>
@@ -85,13 +52,25 @@ export default {
 /* Google fontsで導入したいfonts から@importのコードを取得 */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
 
-#app {
+* {
   text-align: center;
+  font-family: 'Noto Sans JP', sans-serif;
+  margin: 0 auto;
+  font-size: 18px;
+  font-weight: bold;
+  color: gray;
 }
 
-@media (max-width: 767px) {
-  #app {
-    width: 800px;
-  }
+.divsmall {
+  width: 70%;
+}
+
+.divbig {
+  width: 100%;
+}
+
+h1 {
+  color: #20879f;
+  text-shadow: 1px 1px gray;
 }
 </style>
