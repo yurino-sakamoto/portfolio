@@ -43,13 +43,12 @@ export default {
   },
   methods:{
     getChartname(){
-      const names = this.$store.getters.skillName(2)
+      const names = this.$store.getters.skillName(this.$store.state.categories['devops'])
       this.data.labels = names
 
-      const scores = this.$store.getters.skillscore(2)
+      const scores = this.$store.getters.skillscore(this.$store.state.categories['devops'])
       this.data.datasets[0].data = scores
     }
   }
 }
-
 </script>

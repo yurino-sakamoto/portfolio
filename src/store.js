@@ -7,7 +7,8 @@ Vue.use(Vuex);
 export default new Vuex.Store({
   state:{
     SkillCategories: [],
-    loaded:false
+    loaded:false,
+    categories: { 'front-end' : 0, 'back-end' : 1, 'devops' : 2 }
   },
   getters:{
     skillName: (state) => (index) => {
