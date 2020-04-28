@@ -1,12 +1,12 @@
 <template>
   <div
     id="skillSection"
-    class="Section"
+    class="box"
   >
     <h1>
       Skill Set
     </h1>
-    <div class="Explain">
+    <div class="explain">
       フロントエンドを興味があり、デザインなども同時に身につけていきたいと考えています。
       高度な技術を身につけるために、まずバックエンド系の開発に携わる機会も増やし、専門性を高めたいです。
       記載はありませんが、Googleアナリティクス、ライティング、SEO、SNS関連の知識が少しあります。
@@ -27,19 +27,19 @@
     </div>
     <div>
       <button
-        class="FrontEnd"
+        class="frontend"
         @click="setCurrentChart('Front')"
       >
         Front-end
       </button>
       <button
-        class="BackEnd"
+        class="backend"
         @click="setCurrentChart('Back')"
       >
         Back-end
       </button>
       <button
-        class="DevOps"
+        class="devops"
         @click="setCurrentChart('DevOps')"
       >
         DevOps
@@ -51,7 +51,7 @@
     >
       <div v-if="isFrontActive && loaded">
         <div
-          class="FrontEnd"
+          class="frontend"
         >
           <p>HTML</p>
           <p>CSS</p>
@@ -65,7 +65,7 @@
       </div>
       <div v-if="isBackActive">
         <div
-          class="BackEnd"
+          class="backend"
         >
           <p>Java</p>
           <p>Ruby</p>
@@ -76,7 +76,7 @@
       </div>
       <div v-if="isDevActive">
         <div
-          class="DevOps"
+          class="devops"
         >
           <p>Linux</p>
           <p>Node</p>
@@ -166,18 +166,18 @@ button {
   border-radius: 10%;
 }
 
-.FrontEnd,
-.FrontEnd p {
+.frontend,
+.frontend p {
   background-color: rgba(216, 42, 29, 0.1);
 }
 
-.BackEnd,
-.BackEnd p {
+.backend,
+.backend p {
   background-color: rgba(13, 29, 245, 0.1);
 }
 
-.DevOps,
-.DevOps p {
+.devops,
+.devops p {
   background-color: rgba(153, 2, 223, 0.1);
 }
 </style>

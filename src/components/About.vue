@@ -1,14 +1,14 @@
 <template>
   <div
     id="aboutSection"
-    class="Section"
+    class="box"
   >
     <h1
       id="hrskill"
     >
       About Me
     </h1>
-    <div class="Explain">
+    <div class="explain">
       熊本県育ちの新卒1年目です。宮崎県、熊本、広島県、東京に居住経験があります。
       大学では生物系の学部に所属し日々研究に追われていました。
       将来のことを考えた結果、現在は方向転換してプログラマーの道に進んでいます。
@@ -25,7 +25,7 @@
 </script>
 
 <style scope>
-.Section {
+.box {
   border-bottom: 1px solid gray;
   padding-bottom: 30px;
 }
@@ -36,7 +36,7 @@ h1 {
   padding-top: 30px;
 }
 
-.Explain {
+.explain {
   color: #707070;
   font-size: 18px;
 }

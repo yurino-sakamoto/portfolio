@@ -1,7 +1,7 @@
 <template>
   <div
     id="contact"
-    class="Section"
+    class="box"
   >
     <h1>
       Contact

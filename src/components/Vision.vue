@@ -1,14 +1,14 @@
 <template>
   <div
     id="visionSection"
-    class="Section"
+    class="box"
   >
     <h1
       id="hrcontact"
     >
       Vision
     </h1>
-    <div class="Explain">
+    <div class="explain">
       今後のビジョンを記載します。今後はバック・フロント関係なく幅広く知識を身につけた後に、
       フロントエンドに関してより専門的に学んでいこうと考えています。
       その後、デザインや分析などの知識も身につけたいです。

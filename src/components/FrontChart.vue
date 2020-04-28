@@ -38,9 +38,6 @@ export default {
       }
     }
   },
-  //components:{
-  //  store
-  //},
   mounted () {
     this.getChartname();
     this.renderChart(this.data, this.options)
